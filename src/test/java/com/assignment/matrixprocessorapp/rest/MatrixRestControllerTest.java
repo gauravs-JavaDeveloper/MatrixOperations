@@ -63,7 +63,7 @@ public class MatrixRestControllerTest {
 				HttpMethod.POST, entity, String.class);
 		response.getStatusCode();
 		assertEquals(response.getStatusCode(), HttpStatus.BAD_REQUEST);
-		assertEquals(response.getBody(), "Matrix should not be Empty");
+		assertEquals(response.getBody(), "Please provide valid matrix of integers");
 
 	}
 
